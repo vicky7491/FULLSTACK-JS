@@ -1,12 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Practice</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 20px;
+    }
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      border-radius: 8px;
+    }
+    button {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #218838;
+    }
+    input[type="text"] {
+      padding: 8px;
+      width: 200px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    ul li {
+      background: #fff;
+      margin: 5px 0;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    .container {
+      max-width: 600px;
+      margin: 20px auto;
+    }
+  </style>
 </head>
 <body>
-    <h2>This is the Access type part</h2>
-    <script src="script.js"></script>
+  <header>
+    <h1 class="cls">dont Practice DOM Manipulation</h1>
+    <h1 class="cls">dont Practice DOM Manipulation</h1>
+    <h1 class="cls">dont Practice DOM Manipulation</h1>
+    
+  </header>
+  <div class="container">
+    <section>
+      <h2>Change Background Color</h2>
+      <button id="changeColorBtn">Change Color</button>
+    </section>
+    <section>
+      <h2>Update Content</h2>
+      <input type="text" id="textInput" placeholder="Type something here...">
+      <button id="updateTextBtn">Update Text</button>
+      <a id="updateTextBtn">Update Text</a>
+      <p id="displayText">This is a sample text.</p>
+    </section>
+    <section>
+      <h2>Add to List</h2>
+      <input type="text" id="listItemInput" placeholder="Add a new item...">
+      <button  id="vicky">Add Item</button>
+      <ul id="itemList">
+        <li>Example Item 1</li>
+        <li>Example Item 2</li>
+      </ul>
+    </section>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
